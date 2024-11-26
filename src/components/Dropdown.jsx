@@ -37,7 +37,7 @@ const Dropdown = ({ countries, selectedCountry, onChange }) => {
           {countries.map((country) => (
             <li
               key={country.country}
-              className="flex items-center p-2 cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700"
+              className="flex items-center p-2 cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-700 dark:text-gray-300 "
               onClick={() => handleSelect(country)}
             >
               <img
