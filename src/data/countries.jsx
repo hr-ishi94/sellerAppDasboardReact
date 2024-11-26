@@ -2,11 +2,16 @@ import { setCountries, setError, setLoading } from "../redux/countrySlice";
 import stripe from '../assets/icons/stripe.png'
 import zapier from '../assets/icons/zapier.png'
 import shopify from '../assets/icons/shopify.png'
+import usaFlag from '../assets/images/usaFlag.png'
+import germanyFlag from '../assets/images/germanyFlag.png'
+import canadaFlag from '../assets/images/canadaFlag.png'
+import indiaFlag from '../assets/images/indiaFlag.png'
 
 const staticData = {
   countries: [
     {
       country: "USA",
+      flagUrl:usaFlag,
       stats: {
         totalIncome: { value: "33,328.12", percentageChange: 12.24 },
         profit: { value: "8583.09", percentageChange: 2.63 },
@@ -46,6 +51,7 @@ const staticData = {
     },
     {
       country: "Germany",
+      flagUrl:germanyFlag,
       stats: {
         totalIncome: { value: "27,300.42", percentageChange: 5.42 },
         profit: { value: "7800.34", percentageChange: 1.20 },
@@ -85,6 +91,7 @@ const staticData = {
     },
     {
       country: "India",
+      flagUrl:indiaFlag,
       stats: {
         totalIncome: { value: '19,328.50', percentageChange: 8.14 },
         profit: { value: '6532.89', percentageChange: 4.23 },
@@ -127,6 +134,7 @@ const staticData = {
 
     {
       country: "Canada",
+      flagUrl:canadaFlag,
       stats: {
         totalIncome: { value: '25,328.90', percentageChange: 10.50 },
         profit: { value: '7832.10', percentageChange: 5.00 },

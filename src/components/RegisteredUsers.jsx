@@ -16,11 +16,14 @@ const RegisteredUsers = ({registeredUsers}) => {
   const COLORS = ['#696FFB', '#999df7'];
 
   return (
-    <div className="flex flex-col items-center rounded-lg">
-      {/* Title */}
-      <h3 className="text-md font-semibold text-black mr-64 mt-3 dark:text-white ">
+    <div>
+      <h3 className="text-md font-semibold text-black mt-4 ml-6 dark:text-white ">
         Registered Users
       </h3>
+
+
+    <div className="flex flex-col items-center rounded-lg">
+      {/* Title */}
 
       {/* PieChart */}
       <div className="relative w-full flex justify-center">
@@ -39,7 +42,7 @@ const RegisteredUsers = ({registeredUsers}) => {
             startAngle={200}
             endAngle={-20}
             label
-          >
+            >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
@@ -86,6 +89,7 @@ const RegisteredUsers = ({registeredUsers}) => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 

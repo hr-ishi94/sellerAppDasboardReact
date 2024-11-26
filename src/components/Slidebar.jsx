@@ -22,15 +22,15 @@ export default function Slidebar({ children }) {
   return (
     <aside className={`transition-all ${expanded ? "w-64" : "w-16"} bg-white border-none dark:bg-indigo-950`}>
       <nav className="h-full flex flex-col border-r shadow-sm">
-        <div className="mt-4 ml- flex justify-between items-center">
+        <div className="mt-4 flex justify-between items-center">
           {expanded ? (
-            <img src={dark?SellerAppLightText:sellerAppText} className="transition-all ml-6 mr-1" alt="Seller App Text Logo" />
+            <img src={dark?SellerAppLightText:sellerAppText}  className="transition-all ml-1 sm:ml-2 md:ml-6" alt="Seller App Text Logo" />
           ) : (
             <img src={dark?SellerAppLightLogo:sellerApp} className="transition-all" alt="Seller App Logo" />
           )}
           <button
             onClick={() => setExpanded((curr) => !curr)}
-            className="p-0.5 mr-3 rounded-md bg-gray-50 border-gray-600 hover:bg-gray-100 border-2 dark:bg-indigo-950 text-indigo-200"
+            className="p-0.5 mr-1 rounded-md bg-gray-50 border-gray-400 hover:bg-gray-100 border-2 dark:bg-indigo-950 text-indigo-200"
             aria-label="Toggle Sidebar"
           >
             {expanded ? (
